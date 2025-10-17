@@ -21,7 +21,7 @@ Z-score标准化（也称均值归一化）。
 2.图片灰度处理
 3.图片二值化处理，操控每一个像素点，将色彩数值大于128的像素点赋值为0，反之赋值为1
 
-![Uploading image.png…]()
+<img width="1563" height="222" alt="image" src="https://github.com/user-attachments/assets/6ad721d1-2696-435a-87e5-552b0318f92d" />
 
 4.将二维数组转换为一维数组
 5.KNN模型识别：
@@ -32,3 +32,15 @@ Z-score标准化（也称均值归一化）。
 预测阶段
 
 把新图片转换成一维向量，计算它与训练集中每个样本的 距离（通常欧氏距离），找 K 个最近邻，投票决定数字类别
+
+我们先预览上传的数据：
+
+<img width="1109" height="711" alt="image" src="https://github.com/user-attachments/assets/340e48b7-1077-4f1d-b4c0-6f80cdae48d9" />
+
+这里面的数据第一列是对应数字，第二列到第1024列的名字是0到1023，它们都是二值化后的数据
+
+采用knn训练后的效果：
+
+![Uploading image.png…]()
+
+可知训练效果优异。
